@@ -10,14 +10,13 @@ import UIKit
 
 class GroupedTableViewController: UITableViewController {
 
+    private let sectionNameTuple = ["SETTINGS",
+                                    "ABOUT THIS APP",
+                                    "ACKNOWLEDGE"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,9 +26,18 @@ class GroupedTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    /*
+      セクションの数
+    */
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return self.sectionNameTuple.count
+    }
+
+    /*
+      セクション名
+    */
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.sectionNameTuple[section]
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

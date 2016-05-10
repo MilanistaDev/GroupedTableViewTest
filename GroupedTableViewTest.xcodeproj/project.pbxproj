@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FD8B33971CE205F2003E2000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B33961CE205F2003E2000 /* AppDelegate.swift */; };
-		FD8B33991CE205F2003E2000 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B33981CE205F2003E2000 /* ViewController.swift */; };
 		FD8B339C1CE205F2003E2000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8B339A1CE205F2003E2000 /* Main.storyboard */; };
 		FD8B339E1CE205F2003E2000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD8B339D1CE205F2003E2000 /* Assets.xcassets */; };
 		FD8B33A11CE205F2003E2000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD8B339F1CE205F2003E2000 /* LaunchScreen.storyboard */; };
+		FD8B33A91CE20ABE003E2000 /* GroupedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B33A81CE20ABE003E2000 /* GroupedTableViewController.swift */; };
+		FD8B33AB1CE21068003E2000 /* BasicNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8B33AA1CE21068003E2000 /* BasicNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD8B33931CE205F2003E2000 /* GroupedTableViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupedTableViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD8B33961CE205F2003E2000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD8B33981CE205F2003E2000 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD8B339B1CE205F2003E2000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD8B339D1CE205F2003E2000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD8B33A01CE205F2003E2000 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD8B33A21CE205F2003E2000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD8B33A81CE20ABE003E2000 /* GroupedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupedTableViewController.swift; sourceTree = "<group>"; };
+		FD8B33AA1CE21068003E2000 /* BasicNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				FD8B33961CE205F2003E2000 /* AppDelegate.swift */,
-				FD8B33981CE205F2003E2000 /* ViewController.swift */,
+				FD8B33AA1CE21068003E2000 /* BasicNavigationController.swift */,
+				FD8B33A81CE20ABE003E2000 /* GroupedTableViewController.swift */,
 				FD8B339A1CE205F2003E2000 /* Main.storyboard */,
 				FD8B339D1CE205F2003E2000 /* Assets.xcassets */,
 				FD8B339F1CE205F2003E2000 /* LaunchScreen.storyboard */,
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD8B33991CE205F2003E2000 /* ViewController.swift in Sources */,
+				FD8B33A91CE20ABE003E2000 /* GroupedTableViewController.swift in Sources */,
 				FD8B33971CE205F2003E2000 /* AppDelegate.swift in Sources */,
+				FD8B33AB1CE21068003E2000 /* BasicNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

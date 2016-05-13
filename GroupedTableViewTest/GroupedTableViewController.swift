@@ -19,6 +19,8 @@ class GroupedTableViewController: UITableViewController {
                                   (["Libraries", "Acknowledge", "Bug report", "This App Version"])
     ]
 
+    private let FooterStr = "This is Grouped TableView Sample App.\nPlease access GitHub and check sample code."
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,6 +58,19 @@ class GroupedTableViewController: UITableViewController {
         cell.textLabel?.text = cellLabelTuple[indexPath.section][indexPath.row]
 
         return cell
+    }
+
+    /*
+     フッターの表示
+     */
+    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+
+        switch section {
+        case 2:
+            return FooterStr
+        default:
+            return ""
+        }
     }
 
     // MARK:- Other Method

@@ -14,14 +14,14 @@ class GroupedTableViewController: UITableViewController {
                                     "ABOUT THIS APP",
                                     "ACKNOWLEDGE"]
 
+    private let cellLabelTuple = [(["Internal Settings"]),
+                                  (["About this App", "How to use", "New Featrue"]),
+                                  (["Libraries", "Acknowledge", "Bug report", "This App Version"])
+    ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -40,15 +40,37 @@ class GroupedTableViewController: UITableViewController {
         return self.sectionNameTuple[section]
     }
 
+    /*
+      セクションの中のセル数
+    */
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+       return self.cellLabelTuple[section].count
     }
+
+    /*
+      セルを返す
+    */
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
+        let cell = super.tableView(tableView, cellForRowAtIndexPath: indexPath)
+        cell.textLabel?.text = cellLabelTuple[indexPath.section][indexPath.row]
+
+        return cell
+    }
+
+    // MARK:- Other Method
 
     /*
      ステータスバーの文字色を白にする
      */
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
+    }
+
+    // MARK:- Memory Warning
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }
